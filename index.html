@@ -67,8 +67,23 @@
 
             <div class="form-container">
 
+              <form name="request_service" autocomplete="on" novalidate>
+                  <p>Leave your information and we'll call you back</p>
+                <div>
+                  <label>
+                    Name 
+                    <input type="name" name="name" placeholder="Name" />
+                  </label>
+                </div>
+
+                <div>
+                  <label>
+                    Telephone
+                    <input type="tel" name="telephone" placeholder="Telephone" />
+                  </label>
+                </div>
+
               <div>
-                <form name="request_service" autocomplete="on" novalidate>
                   <label>
                     Email
                     <input type="email" name="email" placeholder="Email"/>
@@ -77,12 +92,13 @@
 
               <div>
                 <label>
-                  Password
-                  <input type="password" name="password" placeholder="Password"/>
+                  Comments
+                  <textarea name="text" rows="5" placeholder="Enter the text"></textarea>
                 </label>
               </div>
 
-              <div><button type="submit">Submit</button></div>
+
+              <div><button class="btnservice" type="button">Send</button></div>
 
               </form>
             </div>

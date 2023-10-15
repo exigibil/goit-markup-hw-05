@@ -249,10 +249,19 @@ body {
   right: 8px;
 }
 
-label,
+label {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  gap: 5px;
+}
+
+
 .form-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
+  padding: 40px;
 }
 
 
