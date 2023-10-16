@@ -67,40 +67,51 @@
 
             <div class="form-container">
 
-              <form name="request_service" autocomplete="on" novalidate>
-                  <p>Leave your information and we'll call you back</p>
-                <div>
-                  <label>
-                    Name 
-                    <input type="name" name="name" placeholder="Name" />
-                  </label>
-                </div>
 
-                <div>
-                  <label>
-                    Telephone
-                    <input type="tel" name="telephone" placeholder="Telephone" />
-                  </label>
-                </div>
+              <p>Leave your information and we'll call you back</p>
 
-              <div>
-                  <label>
-                    Email
-                    <input type="email" name="email" placeholder="Email"/>
-                  </label>
-              </div>
+                <form name="request_service" autocomplete="on" novalidate>
+                  <div class="form-data">
+                      <div class="label-form-container">
+                        <label class="label-request">
+                          <p>Name</p> 
+                          <input type="name" name="name" placeholder="Name" />
+                        </label>
+                      </div>
+      
+                      <div class="label-form">
+                        <label class="label-request">
+                          <p>Telephone</p>
+                          <input type="tel" name="telephone" placeholder="Telephone" />
+                        </label>
+                      </div>
+      
+                    <div class="label-form">
+                        <label class="label-request">
+                          <p>Email</p>
+                          <input type="email" name="email" placeholder="Email"/>
+                        </label>
+                    </div>
+      
+                    <div class="label-form">
+                      <label class="label-request">
+                        <p>Comments</p>
+                        <input name="text" rows="5" placeholder="Enter the text" />
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox"/>
+                      I agree with the letter and accept the Terms and Conditions
+                    </label>
+                  </div>
 
-              <div>
-                <label>
-                  Comments
-                  <textarea name="text" rows="5" placeholder="Enter the text"></textarea>
-                </label>
-              </div>
-
+                </form>
+             
 
               <div><button class="btnservice" type="button">Send</button></div>
-
-              </form>
+              
             </div>
 
 

@@ -249,13 +249,19 @@ body {
   right: 8px;
 }
 
-label {
+.form-container {
   display: flex;
   flex-direction: column;
   align-items:flex-start;
-  gap: 5px;
+  gap: 12px;
 }
 
+.form-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
 
 .form-container {
   display: flex;
@@ -264,6 +270,38 @@ label {
   padding: 40px;
 }
 
+.label-request p {
+  font-family: var(--head-text);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(117, 117, 117, 1);
+
+}
+
+.label-request input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-container > p {
+  font-family: var(--head-text);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+}
+
+.label-request {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
+}
 
 .aboutus {
   display: flex;
