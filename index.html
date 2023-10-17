@@ -70,48 +70,79 @@
 
               <p>Leave your information and we'll call you back</p>
 
-                <form name="request_service" autocomplete="on" novalidate>
-                  <div class="form-data">
-                      <div class="label-form-container">
-                        <label class="label-request">
-                          <p>Name</p> 
-                          <input type="name" name="name" placeholder="Name" />
-                        </label>
-                      </div>
-      
-                      <div class="label-form">
-                        <label class="label-request">
-                          <p>Telephone</p>
-                          <input type="tel" name="telephone" placeholder="Telephone" />
-                        </label>
-                      </div>
-      
-                    <div class="label-form">
-                        <label class="label-request">
-                          <p>Email</p>
-                          <input type="email" name="email" placeholder="Email"/>
-                        </label>
-                    </div>
-      
-                    <div class="label-form">
-                      <label class="label-request">
-                        <p>Comments</p>
-                        <input name="text" rows="5" placeholder="Enter the text" />
-                      </label>
-                    </div>
-                  </div>
-                  <div>
-                    <label class="checkbox">
-                      <input type="checkbox" name="checkbox"/>
-                      I agree with the letter and accept the Terms and Conditions
-                    </label>
-                  </div>
+              <form name="request_service" autocomplete="on" novalidate class="contact-form">
 
-                </form>
-             
+                <div class="label-content"> <!--div class="form-section"-->
 
-              <div><button class="btnservice" type="button">Send</button></div>
-              
+                  <label class="form-label">
+                    Name
+                  </label>
+
+                  <div class="form-input-container"> <!--input-container-->
+                    <input class="textfield" type="name" name="name" id="Name" />
+                    <svg class="form-icon">
+                      <use href="/images/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
+
+
+                <div class="label-content">
+                  <label class="form-label">
+                    Telephone
+                  </label>
+
+                  <div class="form-input-container">
+                    <input class="textfield" type="tel" name="telephone" id="Telephone" />
+                    <svg class="form-icon">
+                      <use href="/images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="label-content">
+                  <label class="form-label">
+                    Email
+                  </label>
+                  <div class="form-input-container">
+                    <input class="textfield" type="email" name="email" id="Email" />
+                    <svg class="form-icon">
+                      <use href="/images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="label-content">
+                  <label class="form-label">
+                    Comments
+                  </label>
+                  <textarea placeholder="Enter the text"></textarea>
+                </div>
+
+                <div class="label-content terms-and-conditions-container">
+                  <input type="checkbox" class="terms-and-conditions-check" name="terms-and-conditions-check"
+                    id="terms-and-conditions-check" value="Checked" />
+
+                  <label class="terms-and-conditions-label" for="terms-and-conditions-check">
+
+                    <svg class="form-icon checkbox">
+                      <use href="/images/icons.svg#icon-check-box"></use>
+                    </svg>
+
+                    <span>
+                      I agree with the letter and accept the <a href="#" target="_blank">Terms and
+                        Conditions</a>
+                    </span>
+
+                    
+                </div>
+                
+                <div><input class="btnform" type="submit" value="Send" /></div>
+                
+                
+
+              </form>
+
             </div>
 
 
